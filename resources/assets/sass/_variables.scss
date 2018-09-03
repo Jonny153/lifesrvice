@@ -1,0 +1,44 @@
+
+// Body
+$body-bg: #000000;
+
+// Colors
+$black:    #000;
+$white:    #fff;
+$darkorange: #e6351e;
+
+$dark:     $black;
+$primary:  $darkorange;
+$info:     $white;
+
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&subset=cyrillic');
+$montserrat: 'Montserrat', sans-serif;
+
+$font-family-sans-serif: $montserrat;
+$font-size-base: 1rem;
+$line-height-base: 1.6;
+
+//@fa-font-path:        "../webfonts";
+
+
+
+$navbar-dark-color:                 $white;
+$navbar-dark-hover-color:           $white;
+$navbar-dark-toggler-border-color:  $white;
+
+@mixin transition($property: all, $duration: 0.5s, $animate: linear, $delay:0s){
+    transition: $property $duration $animate $delay;
+}
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66D9b;
+$red: #e3342f;
+$orange: #e94c1e;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
