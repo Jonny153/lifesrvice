@@ -19,8 +19,8 @@ return [
         'fromEmail' => env('MAIL_FROM_ADDRESS'),    // email с которого идет рассылка
         'toEmail' => [                              // адреса, на которые идет рассылка
             'j153.mobile@yandex.ru',
-            //'lifenvrsk@yandex.ru',
-            //'lavshuk87@mail.ru'
+            'lifenvrsk@yandex.ru',
+            'lavshuk87@mail.ru'
         ]
     ],
 
