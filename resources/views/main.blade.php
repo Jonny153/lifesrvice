@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Дезинсекция, дератизация, дезинфекция, дезодорация')
+@section('title', 'Аварийно-монтажная компания')
 
 @section('main-banner')
     <section id="heading">
