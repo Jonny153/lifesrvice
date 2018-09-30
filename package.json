@@ -23,6 +23,7 @@
     "animate.css": "^3.7.0",
     "aos": "^2.3.0",
     "inputmask": "^3.3.11",
-    "jquery-touch-events": "^1.0.7"
+    "jquery-touch-events": "^1.0.7",
+    "tilt.js": "^1.2.1"
   }
 }
