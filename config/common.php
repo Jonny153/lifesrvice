@@ -18,8 +18,7 @@ return [
         'email' => 'info@lifeservice.pro',              // email который отображается на сайте
         'fromEmail' => env('MAIL_FROM_ADDRESS'),    // email с которого идет рассылка
         'toEmail' => [                              // адреса, на которые идет рассылка
-            'lavshuk87@mail.ru',
-            'j153.mobile@yandex.ru'
+            'lavshuk87@mail.ru'
         ]
     ],
 

@@ -8,7 +8,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form class="outline-secondary" id="callForm" action="" data-handler="/call" method="post">
+            <form class="outline-secondary" id="callForm" action="" data-handler="/call" data-placement="modal" method="post">
                 {{ csrf_field() }}
                 <input type="hidden" name="type">
 

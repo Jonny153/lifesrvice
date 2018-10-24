@@ -48,6 +48,17 @@ let response = function (event) {
     let $form = $(event.target);
     let fv = $form.data('formValidation');
     $('.modal').modal('hide');
+
+    // events for Google Analitycs
+    let placement = $form.data('placement');
+    if (placement === 'modal') {
+        window.dataLayer.push({'event': 'get_call'});
+    } else if (placement === 'contacts') {
+        window.dataLayer.push({'event': 'contact_form'});
+    } else if (placement === 'feedback') {
+        window.dataLayer.push({'event': 'review'});
+    }
+
     $.post($form.data('handler'), $form.serialize(), function(result) {
 
         if(result.status === 'ok') {

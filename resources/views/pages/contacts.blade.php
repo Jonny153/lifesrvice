@@ -55,7 +55,7 @@
                     <p class="lead text-center">Если у вас остались вопросы, заполните форму ниже и наш специалист свяжется с вами в ближайшее время</p>
                 </div>
 
-                <form class="outline-secondary border" data-aos="fade-up" id="callForm" action="" data-handler="/call" method="post">
+                <form class="outline-secondary border" data-aos="fade-up" id="callForm" action="" data-handler="/call" data-placement="contacts" method="post">
                     {{ csrf_field() }}
                     <input type="hidden" name="type" value="Страница контактов">
 

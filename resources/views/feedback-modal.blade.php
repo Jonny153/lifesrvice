@@ -8,7 +8,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <form class="outline-secondary" id="feedbackForm" action="" data-handler="/feedback" method="post">
+            <form class="outline-secondary" id="feedbackForm" action="" data-handler="/feedback" data-placement="feedback" method="post">
                 {{ csrf_field() }}
                 <div class="modal-body form-row">
                     <div class="col-md-6 mb-1 form-group">
