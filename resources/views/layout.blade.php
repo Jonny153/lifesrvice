@@ -110,11 +110,13 @@
                 <div class="container">
                     <div class="tel-block text-center">
                         <a class="tel mx-2 mr-lg-5 float-lg-right text-nowrap" href="tel:{{$contacts['phone']}}">
-                            {{$contacts['phoneShort']}}
+                            @if(!empty($contacts['phoneShort'])){{$contacts['phoneShort']}}@else{{$contacts['phoneFormatted']}}@endif
                         </a>
+                        @if(!empty($contacts['phone2']))
                         <a class="tel mx-2 mr-lg-5 float-lg-right text-nowrap" href="tel:{{$contacts['phone2']}}">
                             {{$contacts['phone2Formatted']}}
                         </a>
+                        @endif
                         <div class="clearfix"></div>
                     </div>
                 </div>

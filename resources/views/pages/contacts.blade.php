@@ -29,12 +29,16 @@
             <div class="col-12 col-lg-4 p-5 d-flex flex-column justify-content-center" data-aos="zoom-in-right">
                 <p class="lead">
                     @svg('mobile-alt', 'svg-15 mr-3 animated tada infinite', ['style' => 'animation-duration: 2.5s'])
-                    <a class="tel tel-black mr-5" href="tel:{{$contacts['phone']}}">{{$contacts['phoneShort']}}</a>
+                    <a class="tel tel-black mr-5" href="tel:{{$contacts['phone']}}">
+                        @if(!empty($contacts['phoneShort'])){{$contacts['phoneShort']}}@else{{$contacts['phoneFormatted']}}@endif
+                    </a>
                 </p>
+                @if(!empty($contacts['phone2']))
                 <p class="lead">
                     @svg('mobile-alt', 'svg-15 mr-3 animated tada infinite', ['style' => 'animation-duration: 2.5s'])
                     <a class="tel tel-black mr-5" href="tel:{{$contacts['phone2']}}">{{$contacts['phone2Formatted']}}</a>
                 </p>
+                @endif
                 <p class="lead">
                     @svg('map-marker-alt', 'mr-3')
                     г. Новороссийск
